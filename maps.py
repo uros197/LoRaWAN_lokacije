@@ -140,6 +140,17 @@ for index, row in df.iterrows():
 df["Latitude"] = [c[0] for c in coordinates]
 df["Longitude"] = [c[1] for c in coordinates]
 
+# Save the updated coordinates back to the same spreadsheet
+with pd.ExcelWriter(
+    EXCEL_FILE,
+    engine="openpyxl",
+    mode="a",
+    if_sheet_exists="replace",
+) as writer:
+    df.to_excel(writer, sheet_name=SHEET_NAME, index=False)
+
+print(f"Saved coordinates to {EXCEL_FILE} -> sheet '{SHEET_NAME}'")
+
 
 # ---------------------------------------------------------
 # Create map
