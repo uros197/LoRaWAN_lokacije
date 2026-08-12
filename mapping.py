@@ -1,15 +1,12 @@
-import time
 import pandas as pd
 import folium
-from geopy.geocoders import Nominatim
-from geopy.exc import GeocoderTimedOut, GeocoderServiceError
 
 
 # ---------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------
 
-EXCEL_FILE = "Troškovi.xlsx"
+EXCEL_FILE = "Lokacije.xlsx"
 SHEET_NAME = "Spisak lokacija"
 OUTPUT_FILE = "mapa_lokacija.html"
 
