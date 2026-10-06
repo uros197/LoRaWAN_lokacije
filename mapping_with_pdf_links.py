@@ -112,12 +112,25 @@ center_lat = valid_coordinates[LATITUDE_COLUMN].mean()
 center_lon = valid_coordinates[LONGITUDE_COLUMN].mean()
 
 
+# mapa = folium.Map(
+#     location=[center_lat, center_lon],
+#     zoom_start=11,
+#     tiles="OpenStreetMap"
+# )
+
 mapa = folium.Map(
     location=[center_lat, center_lon],
     zoom_start=11,
-    tiles="OpenStreetMap"
+    tiles=None
 )
 
+folium.TileLayer(
+    tiles="https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+    attr="Esri",
+    name="Esri World Street Map",
+    overlay=False,
+    control=True
+).add_to(mapa)
 
 # ---------------------------------------------------------
 # Add markers
@@ -195,6 +208,9 @@ for _, row in valid_coordinates.iterrows():
             row[LATITUDE_COLUMN],
             row[LONGITUDE_COLUMN]
         ],
+        icon=folium.Icon(
+            color="red" if building_name == "Saobraćajni fakultet" else "blue"
+        ),
         popup=folium.Popup(
             popup_html,
             max_width=350
