@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ea75f1695ff50c9e468486b3ab1cb382 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ea75f1695ff50c9e468486b3ab1cb382" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ea75f1695ff50c9e468486b3ab1cb382 = L.map(
+                "map_ea75f1695ff50c9e468486b3ab1cb382",
+                {
+                    center: [44.800148568750004, 20.456695675],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_172b4527b6ce63865436e5d229fbeef4 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_172b4527b6ce63865436e5d229fbeef4.addTo(map_ea75f1695ff50c9e468486b3ab1cb382);
+        
+    
+            var marker_4924263e6b40ac6f657c58acd0a5102f = L.marker(
+                [44.8060811, 20.4602409],
+                {
+}
+            ).addTo(map_ea75f1695ff50c9e468486b3ab1cb382);
+        
+    
+            var beautify_icon_39f71fafcf39bb52aecbff8114a2a4cc = new L.BeautifyIcon.icon(
+                {
+  "icon": "circle",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "orange",
+  "textColor": "white",
+  "backgroundColor": "orange",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_4924263e6b40ac6f657c58acd0a5102f.setIcon(beautify_icon_39f71fafcf39bb52aecbff8114a2a4cc);
+        
+    
+        var popup_ab285c86cf4bcbad3ac99c2babd627ed = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a504d887123d1d833763ab4381c41409 = $(`<div id="html_a504d887123d1d833763ab4381c41409" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Vlada RS </h4>          <b>Broj objekta:</b>         1         <br>          <b>Adresa:</b>         Nemanjina 11          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Vlada.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_ab285c86cf4bcbad3ac99c2babd627ed.setContent(html_a504d887123d1d833763ab4381c41409);
+            
+        
+
+        marker_4924263e6b40ac6f657c58acd0a5102f.bindPopup(popup_ab285c86cf4bcbad3ac99c2babd627ed)
+        ;
+
+        
+    
+    
+            marker_4924263e6b40ac6f657c58acd0a5102f.bindTooltip(
+                `<div>
+                     Vlada RS 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4924263e6b40ac6f657c58acd0a5102f.setIcon(beautify_icon_39f71fafcf39bb52aecbff8114a2a4cc);
+            
+    
+            var marker_143f7c0068458626356127bde65202bb = L.marker(
+                [44.803962, 20.4624894],
+                {
+}
+            ).addTo(map_ea75f1695ff50c9e468486b3ab1cb382);
+        
+    
+            var beautify_icon_47b9fce34c3507409f6d8188cf5b2964 = new L.BeautifyIcon.icon(
+                {
+  "icon": "circle",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "orange",
+  "textColor": "white",
+  "backgroundColor": "orange",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_143f7c0068458626356127bde65202bb.setIcon(beautify_icon_47b9fce34c3507409f6d8188cf5b2964);
+        
+    
+        var popup_03544abf0bdbb34c41be91e69940adea = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_47d55f8d573fcafed464e2b3d1e81eba = $(`<div id="html_47d55f8d573fcafed464e2b3d1e81eba" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Zgrada više Ministarstava </h4>          <b>Broj objekta:</b>         2         <br>          <b>Adresa:</b>         Nemanjina 22         <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Vi%C5%A1e%20ministarstava.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_03544abf0bdbb34c41be91e69940adea.setContent(html_47d55f8d573fcafed464e2b3d1e81eba);
+            
+        
+
+        marker_143f7c0068458626356127bde65202bb.bindPopup(popup_03544abf0bdbb34c41be91e69940adea)
+        ;
+
+        
+    
+    
+            marker_143f7c0068458626356127bde65202bb.bindTooltip(
+                `<div>
+                     Zgrada više Ministarstava 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_143f7c0068458626356127bde65202bb.setIcon(beautify_icon_47b9fce34c3507409f6d8188cf5b2964);
+            
+    
+            var marker_1a0d121f033a50b1ccc5e1ccbbfe13e5 = L.marker(
+                [44.807695, 20.4636198],
+                {
+}
+            ).addTo(map_ea75f1695ff50c9e468486b3ab1cb382);
+        
+    
+            var beautify_icon_87e73c37089b589ee17978771ca61174 = new L.BeautifyIcon.icon(
+                {
+  "icon": "circle",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "orange",
+  "textColor": "white",
+  "backgroundColor": "orange",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_1a0d121f033a50b1ccc5e1ccbbfe13e5.setIcon(beautify_icon_87e73c37089b589ee17978771ca61174);
+        
+    
+        var popup_5ab8b98862b61888ca2d4f849d556fa2 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4ec175622ae326e8a6ae4b88012383dd = $(`<div id="html_4ec175622ae326e8a6ae4b88012383dd" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Ministarstvo rudarstva i energetike </h4>          <b>Broj objekta:</b>         3         <br>          <b>Adresa:</b>         Kralja Milana 36         <br><br>                   <b>Kalorimetar:</b> 2             <br>                          <b>El. brojilo:</b> 2             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Min.%20rudarstva%20i%20energetike.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_5ab8b98862b61888ca2d4f849d556fa2.setContent(html_4ec175622ae326e8a6ae4b88012383dd);
+            
+        
+
+        marker_1a0d121f033a50b1ccc5e1ccbbfe13e5.bindPopup(popup_5ab8b98862b61888ca2d4f849d556fa2)
+        ;
+
+        
+    
+    
+            marker_1a0d121f033a50b1ccc5e1ccbbfe13e5.bindTooltip(
+                `<div>
+                     Ministarstvo rudarstva i energetike 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1a0d121f033a50b1ccc5e1ccbbfe13e5.setIcon(beautify_icon_87e73c37089b589ee17978771ca61174);
+            
+    
+            var marker_8663237dd26be0e712ad9ec16b8c48f5 = L.marker(
+                [44.8029888, 20.4642296],
+                {
+}
+            ).addTo(map_ea75f1695ff50c9e468486b3ab1cb382);
+        
+    
+            var beautify_icon_08ba6dca84e32156a90dd9cb08698eea = new L.BeautifyIcon.icon(
+                {
+  "icon": "circle",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "orange",
+  "textColor": "white",
+  "backgroundColor": "orange",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_8663237dd26be0e712ad9ec16b8c48f5.setIcon(beautify_icon_08ba6dca84e32156a90dd9cb08698eea);
+        
+    
+        var popup_e4256629a87785369ed49af721d6a4c6 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_bbf8fe7dfdd6a63f8a23decf8f25ee50 = $(`<div id="html_bbf8fe7dfdd6a63f8a23decf8f25ee50" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Ministarstvo za evropske integracije</h4>          <b>Broj objekta:</b>         4         <br>          <b>Adresa:</b>         Nemanjina 34          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 3             <br>                          <b>Vodomer:</b> 2             <br>                      <br>         <a href="Specifikacije/Min.%20evropske%20integracije.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_e4256629a87785369ed49af721d6a4c6.setContent(html_bbf8fe7dfdd6a63f8a23decf8f25ee50);
+            
+        
+
+        marker_8663237dd26be0e712ad9ec16b8c48f5.bindPopup(popup_e4256629a87785369ed49af721d6a4c6)
+        ;
+
+        
+    
+    
+            marker_8663237dd26be0e712ad9ec16b8c48f5.bindTooltip(
+                `<div>
+                     Ministarstvo za evropske integracije
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8663237dd26be0e712ad9ec16b8c48f5.setIcon(beautify_icon_08ba6dca84e32156a90dd9cb08698eea);
+            
+    
+            var marker_c0ef10bea0711814d6232ad68f4ac590 = L.marker(
+                [44.8143088, 20.4040059],
+                {
+}
+            ).addTo(map_ea75f1695ff50c9e468486b3ab1cb382);
+        
+    
+            var beautify_icon_788f73647634698e28f2437df52ad757 = new L.BeautifyIcon.icon(
+                {
+  "icon": "circle",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "orange",
+  "textColor": "white",
+  "backgroundColor": "orange",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_c0ef10bea0711814d6232ad68f4ac590.setIcon(beautify_icon_788f73647634698e28f2437df52ad757);
+        
+    
+        var popup_ddd68e832473c8badc74cc999aabecc0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6552e3382fb6719895717760b98ca783 = $(`<div id="html_6552e3382fb6719895717760b98ca783" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>SIV 3 </h4>          <b>Broj objekta:</b>         5         <br>          <b>Adresa:</b>         Omladinskih brigada 1          <br><br>                   <b>Kalorimetar:</b> 2             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/SIV%203.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_ddd68e832473c8badc74cc999aabecc0.setContent(html_6552e3382fb6719895717760b98ca783);
+            
+        
+
+        marker_c0ef10bea0711814d6232ad68f4ac590.bindPopup(popup_ddd68e832473c8badc74cc999aabecc0)
+        ;
+
+        
+    
+    
+            marker_c0ef10bea0711814d6232ad68f4ac590.bindTooltip(
+                `<div>
+                     SIV 3 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c0ef10bea0711814d6232ad68f4ac590.setIcon(beautify_icon_788f73647634698e28f2437df52ad757);
+            
+    
+            var marker_6be61c49b2274bc7b4341152bfe7d284 = L.marker(
+                [44.820994, 20.426319],
+                {
+}
+            ).addTo(map_ea75f1695ff50c9e468486b3ab1cb382);
+        
+    
+            var beautify_icon_15dce1151e3324fd7b4448fdd6530614 = new L.BeautifyIcon.icon(
+                {
+  "icon": "circle",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "orange",
+  "textColor": "white",
+  "backgroundColor": "orange",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_6be61c49b2274bc7b4341152bfe7d284.setIcon(beautify_icon_15dce1151e3324fd7b4448fdd6530614);
+        
+    
+        var popup_31a67ce38def8885ed7a930efc672577 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8808e167895308f5087abbc9a396ccaa = $(`<div id="html_8808e167895308f5087abbc9a396ccaa" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>SIV 1 </h4>          <b>Broj objekta:</b>         6         <br>          <b>Adresa:</b>         Bulevar Mihajla Pupina 2          <br><br>                   <b>Kalorimetar:</b> 0             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 4             <br>                      <br>         <a href="Specifikacije/SIV%201.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_31a67ce38def8885ed7a930efc672577.setContent(html_8808e167895308f5087abbc9a396ccaa);
+            
+        
+
+        marker_6be61c49b2274bc7b4341152bfe7d284.bindPopup(popup_31a67ce38def8885ed7a930efc672577)
+        ;
+
+        
+    
+    
+            marker_6be61c49b2274bc7b4341152bfe7d284.bindTooltip(
+                `<div>
+                     SIV 1 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6be61c49b2274bc7b4341152bfe7d284.setIcon(beautify_icon_15dce1151e3324fd7b4448fdd6530614);
+            
+    
+            var marker_c6a4fa7d4aa77285dd272c35795a33bd = L.marker(
+                [44.807264, 20.461344],
+                {
+}
+            ).addTo(map_ea75f1695ff50c9e468486b3ab1cb382);
+        
+    
+            var beautify_icon_8e10a5f5737193239e3ab585e7f4ceae = new L.BeautifyIcon.icon(
+                {
+  "icon": "circle",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "orange",
+  "textColor": "white",
+  "backgroundColor": "orange",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_c6a4fa7d4aa77285dd272c35795a33bd.setIcon(beautify_icon_8e10a5f5737193239e3ab585e7f4ceae);
+        
+    
+        var popup_56e80b65055f5dbb9ffa917e92b3302e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_56ff34e8801721df5134bd29cbaf31b9 = $(`<div id="html_56ff34e8801721df5134bd29cbaf31b9" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Ministarstvo finansija </h4>          <b>Broj objekta:</b>         7         <br>          <b>Adresa:</b>         Kneza Miloša 20         <br><br>                   <b>Kalorimetar:</b> 0             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Min.%20finansija.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_56e80b65055f5dbb9ffa917e92b3302e.setContent(html_56ff34e8801721df5134bd29cbaf31b9);
+            
+        
+
+        marker_c6a4fa7d4aa77285dd272c35795a33bd.bindPopup(popup_56e80b65055f5dbb9ffa917e92b3302e)
+        ;
+
+        
+    
+    
+            marker_c6a4fa7d4aa77285dd272c35795a33bd.bindTooltip(
+                `<div>
+                     Ministarstvo finansija 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c6a4fa7d4aa77285dd272c35795a33bd.setIcon(beautify_icon_8e10a5f5737193239e3ab585e7f4ceae);
+            
+    
+            var marker_05464006e8e1f92b72168c1fd6ffe3cf = L.marker(
+                [44.8044226, 20.4671111],
+                {
+}
+            ).addTo(map_ea75f1695ff50c9e468486b3ab1cb382);
+        
+    
+            var beautify_icon_d3dc1458b855c4e32d42b7acee8293c1 = new L.BeautifyIcon.icon(
+                {
+  "icon": "circle",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "orange",
+  "textColor": "white",
+  "backgroundColor": "orange",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_05464006e8e1f92b72168c1fd6ffe3cf.setIcon(beautify_icon_d3dc1458b855c4e32d42b7acee8293c1);
+        
+    
+        var popup_2816e9e0775188c1dd6dbb86eb900788 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_763c4e4191c967129d799841b5ccb5e7 = $(`<div id="html_763c4e4191c967129d799841b5ccb5e7" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Ministarstvo nauke </h4>          <b>Broj objekta:</b>         8         <br>          <b>Adresa:</b>         Njegoševa 12          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Min.%20nauke.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_2816e9e0775188c1dd6dbb86eb900788.setContent(html_763c4e4191c967129d799841b5ccb5e7);
+            
+        
+
+        marker_05464006e8e1f92b72168c1fd6ffe3cf.bindPopup(popup_2816e9e0775188c1dd6dbb86eb900788)
+        ;
+
+        
+    
+    
+            marker_05464006e8e1f92b72168c1fd6ffe3cf.bindTooltip(
+                `<div>
+                     Ministarstvo nauke 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_05464006e8e1f92b72168c1fd6ffe3cf.setIcon(beautify_icon_d3dc1458b855c4e32d42b7acee8293c1);
+            
+    
+            var marker_b74165e823802067575ad1282c57d2d9 = L.marker(
+                [44.7799809, 20.5014736],
+                {
+}
+            ).addTo(map_ea75f1695ff50c9e468486b3ab1cb382);
+        
+    
+            var beautify_icon_27e9aa50c4be347ab6d3f3ff54924859 = new L.BeautifyIcon.icon(
+                {
+  "icon": "circle",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "green",
+  "textColor": "white",
+  "backgroundColor": "green",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_b74165e823802067575ad1282c57d2d9.setIcon(beautify_icon_27e9aa50c4be347ab6d3f3ff54924859);
+        
+    
+        var popup_c0775163099fefb056e82e3928887c97 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_8b096cfc34a488182318548c50713972 = $(`<div id="html_8b096cfc34a488182318548c50713972" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Geološki zavod</h4>          <b>Broj objekta:</b>         9         <br>          <b>Adresa:</b>         Rovinjska 12          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 2             <br>                      <br>         <a href="Specifikacije/Geolo%C5%A1ki%20zavod.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_c0775163099fefb056e82e3928887c97.setContent(html_8b096cfc34a488182318548c50713972);
+            
+        
+
+        marker_b74165e823802067575ad1282c57d2d9.bindPopup(popup_c0775163099fefb056e82e3928887c97)
+        ;
+
+        
+    
+    
+            marker_b74165e823802067575ad1282c57d2d9.bindTooltip(
+                `<div>
+                     Geološki zavod
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b74165e823802067575ad1282c57d2d9.setIcon(beautify_icon_27e9aa50c4be347ab6d3f3ff54924859);
+            
+    
+            var marker_30ca01eb9b86528204d5997fac34f26c = L.marker(
+                [44.7993845, 20.4922127],
+                {
+}
+            ).addTo(map_ea75f1695ff50c9e468486b3ab1cb382);
+        
+    
+            var beautify_icon_7eeb78ab09084362c8ee4a8a924a0d05 = new L.BeautifyIcon.icon(
+                {
+  "icon": "circle",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "green",
+  "textColor": "white",
+  "backgroundColor": "green",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_30ca01eb9b86528204d5997fac34f26c.setIcon(beautify_icon_7eeb78ab09084362c8ee4a8a924a0d05);
+        
+    
+        var popup_2b961ef048c847c4ba86a2d26239a157 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_65db8ecc0f636f06dbf7aa953623e090 = $(`<div id="html_65db8ecc0f636f06dbf7aa953623e090" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Republčki zavod za statistiku</h4>          <b>Broj objekta:</b>         10         <br>          <b>Adresa:</b>         Milana Rakića 5          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Zavod%20za%20statistiku.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_2b961ef048c847c4ba86a2d26239a157.setContent(html_65db8ecc0f636f06dbf7aa953623e090);
+            
+        
+
+        marker_30ca01eb9b86528204d5997fac34f26c.bindPopup(popup_2b961ef048c847c4ba86a2d26239a157)
+        ;
+
+        
+    
+    
+            marker_30ca01eb9b86528204d5997fac34f26c.bindTooltip(
+                `<div>
+                     Republčki zavod za statistiku
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_30ca01eb9b86528204d5997fac34f26c.setIcon(beautify_icon_7eeb78ab09084362c8ee4a8a924a0d05);
+            
+    
+            var marker_12ee6e3dec2ac8df6b075b2e01b6e1f9 = L.marker(
+                [44.7716295, 20.4245241],
+                {
+}
+            ).addTo(map_ea75f1695ff50c9e468486b3ab1cb382);
+        
+    
+            var beautify_icon_5a349c34eef365f25d0140de004a93c7 = new L.BeautifyIcon.icon(
+                {
+  "icon": "circle",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "orange",
+  "textColor": "white",
+  "backgroundColor": "orange",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_12ee6e3dec2ac8df6b075b2e01b6e1f9.setIcon(beautify_icon_5a349c34eef365f25d0140de004a93c7);
+        
+    
+        var popup_8afc2a6670d72bc3a0e443a2471f5e3e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1e382b8ae9085db4965993836816bf9d = $(`<div id="html_1e382b8ae9085db4965993836816bf9d" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Republčki hidrometeorološki zavod</h4>          <b>Broj objekta:</b>         11         <br>          <b>Adresa:</b>         Kneza Višeslava 66          <br><br>                   <b>Kalorimetar:</b> 0             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 2             <br>                      <br>         <a href="Specifikacije/Hidrometeor.%20zavod.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_8afc2a6670d72bc3a0e443a2471f5e3e.setContent(html_1e382b8ae9085db4965993836816bf9d);
+            
+        
+
+        marker_12ee6e3dec2ac8df6b075b2e01b6e1f9.bindPopup(popup_8afc2a6670d72bc3a0e443a2471f5e3e)
+        ;
+
+        
+    
+    
+            marker_12ee6e3dec2ac8df6b075b2e01b6e1f9.bindTooltip(
+                `<div>
+                     Republčki hidrometeorološki zavod
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_12ee6e3dec2ac8df6b075b2e01b6e1f9.setIcon(beautify_icon_5a349c34eef365f25d0140de004a93c7);
+            
+    
+            var marker_7e7eb4b4f73453da97a41148254e5556 = L.marker(
+                [44.7733967, 20.4106731],
+                {
+}
+            ).addTo(map_ea75f1695ff50c9e468486b3ab1cb382);
+        
+    
+            var beautify_icon_5ea89eda4d1713cd0463c661c2fc61f0 = new L.BeautifyIcon.icon(
+                {
+  "icon": "circle",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "green",
+  "textColor": "white",
+  "backgroundColor": "green",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_7e7eb4b4f73453da97a41148254e5556.setIcon(beautify_icon_5ea89eda4d1713cd0463c661c2fc61f0);
+        
+    
+        var popup_932fc42c5c1522015caf93fff187e233 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_1a5bd3ab13ea7904e7b86a67a513628c = $(`<div id="html_1a5bd3ab13ea7904e7b86a67a513628c" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Institut za standardizaciju </h4>          <b>Broj objekta:</b>         12         <br>          <b>Adresa:</b>         Stevana Brakusa 2          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 3             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Institut%20za%20standardizaciju.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_932fc42c5c1522015caf93fff187e233.setContent(html_1a5bd3ab13ea7904e7b86a67a513628c);
+            
+        
+
+        marker_7e7eb4b4f73453da97a41148254e5556.bindPopup(popup_932fc42c5c1522015caf93fff187e233)
+        ;
+
+        
+    
+    
+            marker_7e7eb4b4f73453da97a41148254e5556.bindTooltip(
+                `<div>
+                     Institut za standardizaciju 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7e7eb4b4f73453da97a41148254e5556.setIcon(beautify_icon_5ea89eda4d1713cd0463c661c2fc61f0);
+            
+    
+            var marker_b349c9384f455e68ab4e092c6421c2a0 = L.marker(
+                [44.809542, 20.462414],
+                {
+}
+            ).addTo(map_ea75f1695ff50c9e468486b3ab1cb382);
+        
+    
+            var beautify_icon_7beaa787961a8dfb5925fefa87eb92cb = new L.BeautifyIcon.icon(
+                {
+  "icon": "circle",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "green",
+  "textColor": "white",
+  "backgroundColor": "green",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_b349c9384f455e68ab4e092c6421c2a0.setIcon(beautify_icon_7beaa787961a8dfb5925fefa87eb92cb);
+        
+    
+        var popup_60f64b1cb89eccfbf3f8ea608b50f06b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_bddff7a0bf257568d42502af8ef547ff = $(`<div id="html_bddff7a0bf257568d42502af8ef547ff" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Zgrada RIK</h4>          <b>Broj objekta:</b>         13         <br>          <b>Adresa:</b>         Kralja Milana 14         <br><br>                   <b>Kalorimetar:</b> 2             <br>                          <b>El. brojilo:</b> 2             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/RIK.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_60f64b1cb89eccfbf3f8ea608b50f06b.setContent(html_bddff7a0bf257568d42502af8ef547ff);
+            
+        
+
+        marker_b349c9384f455e68ab4e092c6421c2a0.bindPopup(popup_60f64b1cb89eccfbf3f8ea608b50f06b)
+        ;
+
+        
+    
+    
+            marker_b349c9384f455e68ab4e092c6421c2a0.bindTooltip(
+                `<div>
+                     Zgrada RIK
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b349c9384f455e68ab4e092c6421c2a0.setIcon(beautify_icon_7beaa787961a8dfb5925fefa87eb92cb);
+            
+    
+            var marker_25fe281c22cf2804e55581fb7103afc8 = L.marker(
+                [44.8170058, 20.4610046],
+                {
+}
+            ).addTo(map_ea75f1695ff50c9e468486b3ab1cb382);
+        
+    
+            var beautify_icon_d51b6b4501e5cbd16d8dd35fbf92b586 = new L.BeautifyIcon.icon(
+                {
+  "icon": "circle",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "orange",
+  "textColor": "white",
+  "backgroundColor": "orange",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_25fe281c22cf2804e55581fb7103afc8.setIcon(beautify_icon_d51b6b4501e5cbd16d8dd35fbf92b586);
+        
+    
+        var popup_ea5335ba7c0882500b08bb263f99bbe0 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ff48ca612d0cfd14c2fe41343ae480d6 = $(`<div id="html_ff48ca612d0cfd14c2fe41343ae480d6" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Narodno pozorište</h4>          <b>Broj objekta:</b>         14         <br>          <b>Adresa:</b>         Francuska 3          <br><br>                   <b>Kalorimetar:</b> 3             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Narodno%20pozori%C5%A1te.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_ea5335ba7c0882500b08bb263f99bbe0.setContent(html_ff48ca612d0cfd14c2fe41343ae480d6);
+            
+        
+
+        marker_25fe281c22cf2804e55581fb7103afc8.bindPopup(popup_ea5335ba7c0882500b08bb263f99bbe0)
+        ;
+
+        
+    
+    
+            marker_25fe281c22cf2804e55581fb7103afc8.bindTooltip(
+                `<div>
+                     Narodno pozorište
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_25fe281c22cf2804e55581fb7103afc8.setIcon(beautify_icon_d51b6b4501e5cbd16d8dd35fbf92b586);
+            
+    
+            var marker_49ddb12c8f8c6e3f163e1402066debba = L.marker(
+                [44.8178515, 20.4625252],
+                {
+}
+            ).addTo(map_ea75f1695ff50c9e468486b3ab1cb382);
+        
+    
+            var beautify_icon_4a5f6bb93523937dc7ad5750aaab13e5 = new L.BeautifyIcon.icon(
+                {
+  "icon": "circle",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "orange",
+  "textColor": "white",
+  "backgroundColor": "orange",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_49ddb12c8f8c6e3f163e1402066debba.setIcon(beautify_icon_4a5f6bb93523937dc7ad5750aaab13e5);
+        
+    
+        var popup_cfda4110d703f494dc35da777b48b988 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_da3e5e33828caa53e6729531db1dbc7f = $(`<div id="html_da3e5e33828caa53e6729531db1dbc7f" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Direkcija za vodne puteve “Plovput” </h4>          <b>Broj objekta:</b>         15         <br>          <b>Adresa:</b>         Francuska 9          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 2             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Plovput.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_cfda4110d703f494dc35da777b48b988.setContent(html_da3e5e33828caa53e6729531db1dbc7f);
+            
+        
+
+        marker_49ddb12c8f8c6e3f163e1402066debba.bindPopup(popup_cfda4110d703f494dc35da777b48b988)
+        ;
+
+        
+    
+    
+            marker_49ddb12c8f8c6e3f163e1402066debba.bindTooltip(
+                `<div>
+                     Direkcija za vodne puteve “Plovput” 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_49ddb12c8f8c6e3f163e1402066debba.setIcon(beautify_icon_4a5f6bb93523937dc7ad5750aaab13e5);
+            
+    
+            var marker_919ae8964481f9db267a3d5b26296bdc = L.marker(
+                [44.7658699, 20.4829438],
+                {
+}
+            ).addTo(map_ea75f1695ff50c9e468486b3ab1cb382);
+        
+    
+            var beautify_icon_11057f418c664e0b0f02700a67a16511 = new L.BeautifyIcon.icon(
+                {
+  "icon": "circle",
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "white",
+  "backgroundColor": "red",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_919ae8964481f9db267a3d5b26296bdc.setIcon(beautify_icon_11057f418c664e0b0f02700a67a16511);
+        
+    
+        var popup_3d052aeb11f3da6c3da8244e9e10fa05 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b79d58a5c038eaaa229b017a70a93baa = $(`<div id="html_b79d58a5c038eaaa229b017a70a93baa" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Saobraćajni fakultet</h4>          <b>Broj objekta:</b>         16         <br>          <b>Adresa:</b>         Vojvode Stepe 305          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 2             <br>                      <br>         <a href="Specifikacije/Saobra%C4%87ajni%20fakultet.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_3d052aeb11f3da6c3da8244e9e10fa05.setContent(html_b79d58a5c038eaaa229b017a70a93baa);
+            
+        
+
+        marker_919ae8964481f9db267a3d5b26296bdc.bindPopup(popup_3d052aeb11f3da6c3da8244e9e10fa05)
+        ;
+
+        
+    
+    
+            marker_919ae8964481f9db267a3d5b26296bdc.bindTooltip(
+                `<div>
+                     Saobraćajni fakultet
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_919ae8964481f9db267a3d5b26296bdc.setIcon(beautify_icon_11057f418c664e0b0f02700a67a16511);
+            
+    
+            map_ea75f1695ff50c9e468486b3ab1cb382.fitBounds(
+                [[44.7658699, 20.4040059], [44.820994, 20.5014736]],
+                {}
+            );
+        
+</script>
+</html>
