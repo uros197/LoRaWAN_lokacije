@@ -11,7 +11,7 @@ from urllib.parse import quote
 
 EXCEL_FILE = "Lokacije.xlsx"
 SHEET_NAME = "Spisak lokacija"
-OUTPUT_FILE = "mapa_lokacija.html"
+OUTPUT_FILE = "publish/index.html"
 
 # Folder containing the 15 PDF specifications.
 # Keep this folder next to mapa_lokacija.html.
