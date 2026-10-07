@@ -1,5 +1,6 @@
 import pandas as pd
 import folium
+from folium.plugins import BeautifyIcon
 from pathlib import Path
 from urllib.parse import quote
 
@@ -34,6 +35,13 @@ MEASUREMENT_COLUMNS = [
     "El. brojilo",
     "Vodomer"
 ]
+
+# Add exact building names from the "Zgrada" column to set their pin colors.
+gotovo = ["Geološki zavod", 
+          "Republčki zavod za statistiku", 
+          "Institut za standardizaciju ",
+          "Zgrada RIK"
+          ]
 
 
 # ---------------------------------------------------------
@@ -203,13 +211,24 @@ for _, row in valid_coordinates.iterrows():
     # Marker
     # -----------------------------------------------------
 
+    if building_name in ("Saobraćajni_fakultet", "Saobraćajni fakultet"):
+        pin_color = "red"
+    elif building_name in gotovo:
+        pin_color = "green"
+    else:
+        pin_color = "orange"
+
     folium.Marker(
         location=[
             row[LATITUDE_COLUMN],
             row[LONGITUDE_COLUMN]
         ],
-        icon=folium.Icon(
-            color="red" if building_name == "Saobraćajni fakultet" else "blue"
+        icon=BeautifyIcon(
+            icon="circle",
+            icon_shape="marker",
+            text_color="white",
+            background_color=pin_color,
+            border_color=pin_color
         ),
         popup=folium.Popup(
             popup_html,
