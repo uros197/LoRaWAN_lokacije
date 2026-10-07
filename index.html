@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_55be2a98f85924b581543bb6e8809209 {
+                #map_cbf13fc54e25f24e9bb5e84eb865a677 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -56,21 +56,22 @@
 <body>
     
     
-            <div class="folium-map" id="map_55be2a98f85924b581543bb6e8809209" ></div>
+            <div class="folium-map" id="map_cbf13fc54e25f24e9bb5e84eb865a677" ></div>
         
 </body>
 <script>
     
     
-            var map_55be2a98f85924b581543bb6e8809209 = L.map(
-                "map_55be2a98f85924b581543bb6e8809209",
+            var map_cbf13fc54e25f24e9bb5e84eb865a677 = L.map(
+                "map_cbf13fc54e25f24e9bb5e84eb865a677",
                 {
-                    center: [44.800148568750004, 20.456695675],
+                    center: [44.79514856875, 20.456695675],
                     crs: L.CRS.EPSG3857,
                     ...{
-  "zoom": 11,
+  "zoom": 13.9,
   "zoomControl": true,
   "preferCanvas": false,
+  "zoomSnap": 0.1,
 }
 
                 }
@@ -80,7 +81,7 @@
 
         
     
-            var tile_layer_668ee58f1cb6d7b8201b824a0f328a02 = L.tileLayer(
+            var tile_layer_97a16a2ec0ccfe516e1dfa55e48d9d5c = L.tileLayer(
                 "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
                 {
   "minZoom": 0,
@@ -97,17 +98,17 @@
             );
         
     
-            tile_layer_668ee58f1cb6d7b8201b824a0f328a02.addTo(map_55be2a98f85924b581543bb6e8809209);
+            tile_layer_97a16a2ec0ccfe516e1dfa55e48d9d5c.addTo(map_cbf13fc54e25f24e9bb5e84eb865a677);
         
     
-            var marker_195e70496c7124415eafa26eb35ea9ed = L.marker(
+            var marker_db4d3b4d65d5ded693eab4b5690976d4 = L.marker(
                 [44.8060811, 20.4602409],
                 {
 }
-            ).addTo(map_55be2a98f85924b581543bb6e8809209);
+            ).addTo(map_cbf13fc54e25f24e9bb5e84eb865a677);
         
     
-            var beautify_icon_7e04a3a5ecdbab05a7be5ae9d60b9ea3 = new L.BeautifyIcon.icon(
+            var beautify_icon_8634ef08c1f18641f6e31a6c1c32573d = new L.BeautifyIcon.icon(
                 {
   "icon": "circle",
   "iconShape": "marker",
@@ -120,27 +121,27 @@
   "isAlphaNumericIcon": false,
 }
             )
-            marker_195e70496c7124415eafa26eb35ea9ed.setIcon(beautify_icon_7e04a3a5ecdbab05a7be5ae9d60b9ea3);
+            marker_db4d3b4d65d5ded693eab4b5690976d4.setIcon(beautify_icon_8634ef08c1f18641f6e31a6c1c32573d);
         
     
-        var popup_1c0ddd3bd68faef849f8da43e95e43ba = L.popup({
+        var popup_94f484ca2cc0de7a9bc00b875ca51789 = L.popup({
   "maxWidth": 350,
 });
 
         
             
-                var html_4ebc47f852e0f034999ff628a5786dc1 = $(`<div id="html_4ebc47f852e0f034999ff628a5786dc1" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Vlada RS </h4>          <b>Broj objekta:</b>         1         <br>          <b>Adresa:</b>         Nemanjina 11          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Vlada.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
-                popup_1c0ddd3bd68faef849f8da43e95e43ba.setContent(html_4ebc47f852e0f034999ff628a5786dc1);
+                var html_36f94b3b1f4bf0f41fc19f7f41e4fbaf = $(`<div id="html_36f94b3b1f4bf0f41fc19f7f41e4fbaf" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Vlada RS </h4>          <b>Broj objekta:</b>         1         <br>          <b>Adresa:</b>         Nemanjina 11          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Vlada.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_94f484ca2cc0de7a9bc00b875ca51789.setContent(html_36f94b3b1f4bf0f41fc19f7f41e4fbaf);
             
         
 
-        marker_195e70496c7124415eafa26eb35ea9ed.bindPopup(popup_1c0ddd3bd68faef849f8da43e95e43ba)
+        marker_db4d3b4d65d5ded693eab4b5690976d4.bindPopup(popup_94f484ca2cc0de7a9bc00b875ca51789)
         ;
 
         
     
     
-            marker_195e70496c7124415eafa26eb35ea9ed.bindTooltip(
+            marker_db4d3b4d65d5ded693eab4b5690976d4.bindTooltip(
                 `<div>
                      Vlada RS 
                  </div>`,
@@ -150,17 +151,17 @@
             );
         
     
-                marker_195e70496c7124415eafa26eb35ea9ed.setIcon(beautify_icon_7e04a3a5ecdbab05a7be5ae9d60b9ea3);
+                marker_db4d3b4d65d5ded693eab4b5690976d4.setIcon(beautify_icon_8634ef08c1f18641f6e31a6c1c32573d);
             
     
-            var marker_48740688ebe89ae28a8aba77571b7f24 = L.marker(
+            var marker_ee7ea7b52d879280d6f524dd542520f0 = L.marker(
                 [44.803962, 20.4624894],
                 {
 }
-            ).addTo(map_55be2a98f85924b581543bb6e8809209);
+            ).addTo(map_cbf13fc54e25f24e9bb5e84eb865a677);
         
     
-            var beautify_icon_521472cab4f0b353104932a077be3589 = new L.BeautifyIcon.icon(
+            var beautify_icon_2468110722091d80d919cab9c2f28954 = new L.BeautifyIcon.icon(
                 {
   "icon": "circle",
   "iconShape": "marker",
@@ -173,27 +174,27 @@
   "isAlphaNumericIcon": false,
 }
             )
-            marker_48740688ebe89ae28a8aba77571b7f24.setIcon(beautify_icon_521472cab4f0b353104932a077be3589);
+            marker_ee7ea7b52d879280d6f524dd542520f0.setIcon(beautify_icon_2468110722091d80d919cab9c2f28954);
         
     
-        var popup_bab1f1246b63f7ce03d8384746a36716 = L.popup({
+        var popup_f48b75706b019704f7ecdddac553aefd = L.popup({
   "maxWidth": 350,
 });
 
         
             
-                var html_f0a5f27b2db0604ee5807255457739d2 = $(`<div id="html_f0a5f27b2db0604ee5807255457739d2" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Zgrada više Ministarstava </h4>          <b>Broj objekta:</b>         2         <br>          <b>Adresa:</b>         Nemanjina 22         <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Vi%C5%A1e%20ministarstava.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
-                popup_bab1f1246b63f7ce03d8384746a36716.setContent(html_f0a5f27b2db0604ee5807255457739d2);
+                var html_51d635833f9d47696608875ccbf7f760 = $(`<div id="html_51d635833f9d47696608875ccbf7f760" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Zgrada više Ministarstava </h4>          <b>Broj objekta:</b>         2         <br>          <b>Adresa:</b>         Nemanjina 22         <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Vi%C5%A1e%20ministarstava.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_f48b75706b019704f7ecdddac553aefd.setContent(html_51d635833f9d47696608875ccbf7f760);
             
         
 
-        marker_48740688ebe89ae28a8aba77571b7f24.bindPopup(popup_bab1f1246b63f7ce03d8384746a36716)
+        marker_ee7ea7b52d879280d6f524dd542520f0.bindPopup(popup_f48b75706b019704f7ecdddac553aefd)
         ;
 
         
     
     
-            marker_48740688ebe89ae28a8aba77571b7f24.bindTooltip(
+            marker_ee7ea7b52d879280d6f524dd542520f0.bindTooltip(
                 `<div>
                      Zgrada više Ministarstava 
                  </div>`,
@@ -203,17 +204,17 @@
             );
         
     
-                marker_48740688ebe89ae28a8aba77571b7f24.setIcon(beautify_icon_521472cab4f0b353104932a077be3589);
+                marker_ee7ea7b52d879280d6f524dd542520f0.setIcon(beautify_icon_2468110722091d80d919cab9c2f28954);
             
     
-            var marker_0d1ee2a7dcdab0fd58ffe42d2e31ea59 = L.marker(
+            var marker_6de617a56374d3b23be6eddd7377f2b6 = L.marker(
                 [44.807695, 20.4636198],
                 {
 }
-            ).addTo(map_55be2a98f85924b581543bb6e8809209);
+            ).addTo(map_cbf13fc54e25f24e9bb5e84eb865a677);
         
     
-            var beautify_icon_e3018f20fe315398b4cc74a8491824c5 = new L.BeautifyIcon.icon(
+            var beautify_icon_97afb5a0688636658c5fff3e276d36a0 = new L.BeautifyIcon.icon(
                 {
   "icon": "circle",
   "iconShape": "marker",
@@ -226,27 +227,27 @@
   "isAlphaNumericIcon": false,
 }
             )
-            marker_0d1ee2a7dcdab0fd58ffe42d2e31ea59.setIcon(beautify_icon_e3018f20fe315398b4cc74a8491824c5);
+            marker_6de617a56374d3b23be6eddd7377f2b6.setIcon(beautify_icon_97afb5a0688636658c5fff3e276d36a0);
         
     
-        var popup_316c594653aaa774db18e07c20c70c8b = L.popup({
+        var popup_cc0cc85fadf78cebba6ed53ddb07052b = L.popup({
   "maxWidth": 350,
 });
 
         
             
-                var html_ef2633fec9908ae65effe563b55213bf = $(`<div id="html_ef2633fec9908ae65effe563b55213bf" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Ministarstvo rudarstva i energetike </h4>          <b>Broj objekta:</b>         3         <br>          <b>Adresa:</b>         Kralja Milana 36         <br><br>                   <b>Kalorimetar:</b> 2             <br>                          <b>El. brojilo:</b> 2             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Min.%20rudarstva%20i%20energetike.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
-                popup_316c594653aaa774db18e07c20c70c8b.setContent(html_ef2633fec9908ae65effe563b55213bf);
+                var html_1fadcf2891f31381548a66df13b5b04b = $(`<div id="html_1fadcf2891f31381548a66df13b5b04b" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Ministarstvo rudarstva i energetike </h4>          <b>Broj objekta:</b>         3         <br>          <b>Adresa:</b>         Kralja Milana 36         <br><br>                   <b>Kalorimetar:</b> 2             <br>                          <b>El. brojilo:</b> 2             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Min.%20rudarstva%20i%20energetike.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_cc0cc85fadf78cebba6ed53ddb07052b.setContent(html_1fadcf2891f31381548a66df13b5b04b);
             
         
 
-        marker_0d1ee2a7dcdab0fd58ffe42d2e31ea59.bindPopup(popup_316c594653aaa774db18e07c20c70c8b)
+        marker_6de617a56374d3b23be6eddd7377f2b6.bindPopup(popup_cc0cc85fadf78cebba6ed53ddb07052b)
         ;
 
         
     
     
-            marker_0d1ee2a7dcdab0fd58ffe42d2e31ea59.bindTooltip(
+            marker_6de617a56374d3b23be6eddd7377f2b6.bindTooltip(
                 `<div>
                      Ministarstvo rudarstva i energetike 
                  </div>`,
@@ -256,17 +257,17 @@
             );
         
     
-                marker_0d1ee2a7dcdab0fd58ffe42d2e31ea59.setIcon(beautify_icon_e3018f20fe315398b4cc74a8491824c5);
+                marker_6de617a56374d3b23be6eddd7377f2b6.setIcon(beautify_icon_97afb5a0688636658c5fff3e276d36a0);
             
     
-            var marker_2a431bb52df2bfdf4b8c0e9478f84691 = L.marker(
+            var marker_257231061cfe57913210d5cb527ca023 = L.marker(
                 [44.8029888, 20.4642296],
                 {
 }
-            ).addTo(map_55be2a98f85924b581543bb6e8809209);
+            ).addTo(map_cbf13fc54e25f24e9bb5e84eb865a677);
         
     
-            var beautify_icon_d2c6c779ffb8bc0bb3c91e0e2f010db4 = new L.BeautifyIcon.icon(
+            var beautify_icon_c28014a169154b4a1cbe778da3213d54 = new L.BeautifyIcon.icon(
                 {
   "icon": "circle",
   "iconShape": "marker",
@@ -279,27 +280,27 @@
   "isAlphaNumericIcon": false,
 }
             )
-            marker_2a431bb52df2bfdf4b8c0e9478f84691.setIcon(beautify_icon_d2c6c779ffb8bc0bb3c91e0e2f010db4);
+            marker_257231061cfe57913210d5cb527ca023.setIcon(beautify_icon_c28014a169154b4a1cbe778da3213d54);
         
     
-        var popup_f53a5ea2b778e50d0156fc5e84cef43e = L.popup({
+        var popup_40b06c68733e56ac87605c381f81d148 = L.popup({
   "maxWidth": 350,
 });
 
         
             
-                var html_847c2272377f89af3ce6b5781536241d = $(`<div id="html_847c2272377f89af3ce6b5781536241d" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Ministarstvo za evropske integracije</h4>          <b>Broj objekta:</b>         4         <br>          <b>Adresa:</b>         Nemanjina 34          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 3             <br>                          <b>Vodomer:</b> 2             <br>                      <br>         <a href="Specifikacije/Min.%20evropske%20integracije.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
-                popup_f53a5ea2b778e50d0156fc5e84cef43e.setContent(html_847c2272377f89af3ce6b5781536241d);
+                var html_e665b8778b05dafb5f0abfd162df2270 = $(`<div id="html_e665b8778b05dafb5f0abfd162df2270" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Ministarstvo za evropske integracije</h4>          <b>Broj objekta:</b>         4         <br>          <b>Adresa:</b>         Nemanjina 34          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 3             <br>                          <b>Vodomer:</b> 2             <br>                      <br>         <a href="Specifikacije/Min.%20evropske%20integracije.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_40b06c68733e56ac87605c381f81d148.setContent(html_e665b8778b05dafb5f0abfd162df2270);
             
         
 
-        marker_2a431bb52df2bfdf4b8c0e9478f84691.bindPopup(popup_f53a5ea2b778e50d0156fc5e84cef43e)
+        marker_257231061cfe57913210d5cb527ca023.bindPopup(popup_40b06c68733e56ac87605c381f81d148)
         ;
 
         
     
     
-            marker_2a431bb52df2bfdf4b8c0e9478f84691.bindTooltip(
+            marker_257231061cfe57913210d5cb527ca023.bindTooltip(
                 `<div>
                      Ministarstvo za evropske integracije
                  </div>`,
@@ -309,17 +310,17 @@
             );
         
     
-                marker_2a431bb52df2bfdf4b8c0e9478f84691.setIcon(beautify_icon_d2c6c779ffb8bc0bb3c91e0e2f010db4);
+                marker_257231061cfe57913210d5cb527ca023.setIcon(beautify_icon_c28014a169154b4a1cbe778da3213d54);
             
     
-            var marker_c9a01bfb5126fc50ad8083539cce7914 = L.marker(
+            var marker_318c388621ac1bfd8970a8cd07688122 = L.marker(
                 [44.8143088, 20.4040059],
                 {
 }
-            ).addTo(map_55be2a98f85924b581543bb6e8809209);
+            ).addTo(map_cbf13fc54e25f24e9bb5e84eb865a677);
         
     
-            var beautify_icon_3dd737d02c3805e2b240b36c1d7fa399 = new L.BeautifyIcon.icon(
+            var beautify_icon_71ede215726992585ca6a71ed230065c = new L.BeautifyIcon.icon(
                 {
   "icon": "circle",
   "iconShape": "marker",
@@ -332,27 +333,27 @@
   "isAlphaNumericIcon": false,
 }
             )
-            marker_c9a01bfb5126fc50ad8083539cce7914.setIcon(beautify_icon_3dd737d02c3805e2b240b36c1d7fa399);
+            marker_318c388621ac1bfd8970a8cd07688122.setIcon(beautify_icon_71ede215726992585ca6a71ed230065c);
         
     
-        var popup_a7715739bd42a6c93007667a97c1d327 = L.popup({
+        var popup_dd49197b7dfdacdf99ea4da09999dfa1 = L.popup({
   "maxWidth": 350,
 });
 
         
             
-                var html_016a7b82e580490595ac655bae64d72d = $(`<div id="html_016a7b82e580490595ac655bae64d72d" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>SIV 3 </h4>          <b>Broj objekta:</b>         5         <br>          <b>Adresa:</b>         Omladinskih brigada 1          <br><br>                   <b>Kalorimetar:</b> 2             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/SIV%203.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
-                popup_a7715739bd42a6c93007667a97c1d327.setContent(html_016a7b82e580490595ac655bae64d72d);
+                var html_8140cb6414347f3f5bdcab6c874edea9 = $(`<div id="html_8140cb6414347f3f5bdcab6c874edea9" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>SIV 3 </h4>          <b>Broj objekta:</b>         5         <br>          <b>Adresa:</b>         Omladinskih brigada 1          <br><br>                   <b>Kalorimetar:</b> 2             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/SIV%203.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_dd49197b7dfdacdf99ea4da09999dfa1.setContent(html_8140cb6414347f3f5bdcab6c874edea9);
             
         
 
-        marker_c9a01bfb5126fc50ad8083539cce7914.bindPopup(popup_a7715739bd42a6c93007667a97c1d327)
+        marker_318c388621ac1bfd8970a8cd07688122.bindPopup(popup_dd49197b7dfdacdf99ea4da09999dfa1)
         ;
 
         
     
     
-            marker_c9a01bfb5126fc50ad8083539cce7914.bindTooltip(
+            marker_318c388621ac1bfd8970a8cd07688122.bindTooltip(
                 `<div>
                      SIV 3 
                  </div>`,
@@ -362,17 +363,17 @@
             );
         
     
-                marker_c9a01bfb5126fc50ad8083539cce7914.setIcon(beautify_icon_3dd737d02c3805e2b240b36c1d7fa399);
+                marker_318c388621ac1bfd8970a8cd07688122.setIcon(beautify_icon_71ede215726992585ca6a71ed230065c);
             
     
-            var marker_6e0c349e7252166015491a51bc9eb972 = L.marker(
+            var marker_de7207b839818afdc3850255c88d43d7 = L.marker(
                 [44.820994, 20.426319],
                 {
 }
-            ).addTo(map_55be2a98f85924b581543bb6e8809209);
+            ).addTo(map_cbf13fc54e25f24e9bb5e84eb865a677);
         
     
-            var beautify_icon_de08fa951745e91bcdfbba148c780882 = new L.BeautifyIcon.icon(
+            var beautify_icon_c3a9adb1e258628c6a190d90853f50d4 = new L.BeautifyIcon.icon(
                 {
   "icon": "circle",
   "iconShape": "marker",
@@ -385,27 +386,27 @@
   "isAlphaNumericIcon": false,
 }
             )
-            marker_6e0c349e7252166015491a51bc9eb972.setIcon(beautify_icon_de08fa951745e91bcdfbba148c780882);
+            marker_de7207b839818afdc3850255c88d43d7.setIcon(beautify_icon_c3a9adb1e258628c6a190d90853f50d4);
         
     
-        var popup_8efb48c508b286301f65f844e927602d = L.popup({
+        var popup_a4e13cee1faf6810b0586a9c9e840dfc = L.popup({
   "maxWidth": 350,
 });
 
         
             
-                var html_f5be9e589505feaf05b288100b6ced0d = $(`<div id="html_f5be9e589505feaf05b288100b6ced0d" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>SIV 1 </h4>          <b>Broj objekta:</b>         6         <br>          <b>Adresa:</b>         Bulevar Mihajla Pupina 2          <br><br>                   <b>Kalorimetar:</b> 0             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 4             <br>                      <br>         <a href="Specifikacije/SIV%201.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
-                popup_8efb48c508b286301f65f844e927602d.setContent(html_f5be9e589505feaf05b288100b6ced0d);
+                var html_77aaadaad3725b78000d2a5f14b320c5 = $(`<div id="html_77aaadaad3725b78000d2a5f14b320c5" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>SIV 1 </h4>          <b>Broj objekta:</b>         6         <br>          <b>Adresa:</b>         Bulevar Mihajla Pupina 2          <br><br>                   <b>Kalorimetar:</b> 0             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 4             <br>                      <br>         <a href="Specifikacije/SIV%201.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_a4e13cee1faf6810b0586a9c9e840dfc.setContent(html_77aaadaad3725b78000d2a5f14b320c5);
             
         
 
-        marker_6e0c349e7252166015491a51bc9eb972.bindPopup(popup_8efb48c508b286301f65f844e927602d)
+        marker_de7207b839818afdc3850255c88d43d7.bindPopup(popup_a4e13cee1faf6810b0586a9c9e840dfc)
         ;
 
         
     
     
-            marker_6e0c349e7252166015491a51bc9eb972.bindTooltip(
+            marker_de7207b839818afdc3850255c88d43d7.bindTooltip(
                 `<div>
                      SIV 1 
                  </div>`,
@@ -415,17 +416,17 @@
             );
         
     
-                marker_6e0c349e7252166015491a51bc9eb972.setIcon(beautify_icon_de08fa951745e91bcdfbba148c780882);
+                marker_de7207b839818afdc3850255c88d43d7.setIcon(beautify_icon_c3a9adb1e258628c6a190d90853f50d4);
             
     
-            var marker_fdb58660affe70af20c168ceb73d820d = L.marker(
+            var marker_ced803df6da2ca74e7ede21fca1a40d5 = L.marker(
                 [44.807264, 20.461344],
                 {
 }
-            ).addTo(map_55be2a98f85924b581543bb6e8809209);
+            ).addTo(map_cbf13fc54e25f24e9bb5e84eb865a677);
         
     
-            var beautify_icon_b5b45244c3df56727d29c1772cf8e417 = new L.BeautifyIcon.icon(
+            var beautify_icon_470dc6d85139695ccf553364b944feb7 = new L.BeautifyIcon.icon(
                 {
   "icon": "circle",
   "iconShape": "marker",
@@ -438,27 +439,27 @@
   "isAlphaNumericIcon": false,
 }
             )
-            marker_fdb58660affe70af20c168ceb73d820d.setIcon(beautify_icon_b5b45244c3df56727d29c1772cf8e417);
+            marker_ced803df6da2ca74e7ede21fca1a40d5.setIcon(beautify_icon_470dc6d85139695ccf553364b944feb7);
         
     
-        var popup_07bcfd726cbe307e6f29f18a80f502f5 = L.popup({
+        var popup_25d212145f9ae0b19f50098e83be803f = L.popup({
   "maxWidth": 350,
 });
 
         
             
-                var html_5a05337830bdee1fd38fe658f3c403b4 = $(`<div id="html_5a05337830bdee1fd38fe658f3c403b4" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Ministarstvo finansija </h4>          <b>Broj objekta:</b>         7         <br>          <b>Adresa:</b>         Kneza Miloša 20         <br><br>                   <b>Kalorimetar:</b> 0             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Min.%20finansija.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
-                popup_07bcfd726cbe307e6f29f18a80f502f5.setContent(html_5a05337830bdee1fd38fe658f3c403b4);
+                var html_1f533961e7ee0c0bb297839d8ebe7147 = $(`<div id="html_1f533961e7ee0c0bb297839d8ebe7147" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Ministarstvo finansija </h4>          <b>Broj objekta:</b>         7         <br>          <b>Adresa:</b>         Kneza Miloša 20         <br><br>                   <b>Kalorimetar:</b> 0             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Min.%20finansija.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_25d212145f9ae0b19f50098e83be803f.setContent(html_1f533961e7ee0c0bb297839d8ebe7147);
             
         
 
-        marker_fdb58660affe70af20c168ceb73d820d.bindPopup(popup_07bcfd726cbe307e6f29f18a80f502f5)
+        marker_ced803df6da2ca74e7ede21fca1a40d5.bindPopup(popup_25d212145f9ae0b19f50098e83be803f)
         ;
 
         
     
     
-            marker_fdb58660affe70af20c168ceb73d820d.bindTooltip(
+            marker_ced803df6da2ca74e7ede21fca1a40d5.bindTooltip(
                 `<div>
                      Ministarstvo finansija 
                  </div>`,
@@ -468,17 +469,17 @@
             );
         
     
-                marker_fdb58660affe70af20c168ceb73d820d.setIcon(beautify_icon_b5b45244c3df56727d29c1772cf8e417);
+                marker_ced803df6da2ca74e7ede21fca1a40d5.setIcon(beautify_icon_470dc6d85139695ccf553364b944feb7);
             
     
-            var marker_f82e23e361c3885f1b0b2309eb4b46a6 = L.marker(
+            var marker_75846ef452debc1a1b710a1ca55fd590 = L.marker(
                 [44.8044226, 20.4671111],
                 {
 }
-            ).addTo(map_55be2a98f85924b581543bb6e8809209);
+            ).addTo(map_cbf13fc54e25f24e9bb5e84eb865a677);
         
     
-            var beautify_icon_a4448beed40dc989abf7e775ee4562c6 = new L.BeautifyIcon.icon(
+            var beautify_icon_250f7e08a2b55adfa94c36c44e010cee = new L.BeautifyIcon.icon(
                 {
   "icon": "circle",
   "iconShape": "marker",
@@ -491,27 +492,27 @@
   "isAlphaNumericIcon": false,
 }
             )
-            marker_f82e23e361c3885f1b0b2309eb4b46a6.setIcon(beautify_icon_a4448beed40dc989abf7e775ee4562c6);
+            marker_75846ef452debc1a1b710a1ca55fd590.setIcon(beautify_icon_250f7e08a2b55adfa94c36c44e010cee);
         
     
-        var popup_f5c80deb1414d89ec71d998af1fdfe4a = L.popup({
+        var popup_a8774ee89219bbd31862f901b50ecf8f = L.popup({
   "maxWidth": 350,
 });
 
         
             
-                var html_ac19a2520c1ad69b07656b10a3b24da4 = $(`<div id="html_ac19a2520c1ad69b07656b10a3b24da4" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Ministarstvo nauke </h4>          <b>Broj objekta:</b>         8         <br>          <b>Adresa:</b>         Njegoševa 12          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Min.%20nauke.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
-                popup_f5c80deb1414d89ec71d998af1fdfe4a.setContent(html_ac19a2520c1ad69b07656b10a3b24da4);
+                var html_3c62df9dc4545580770f6927094ed513 = $(`<div id="html_3c62df9dc4545580770f6927094ed513" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Ministarstvo nauke </h4>          <b>Broj objekta:</b>         8         <br>          <b>Adresa:</b>         Njegoševa 12          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Min.%20nauke.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_a8774ee89219bbd31862f901b50ecf8f.setContent(html_3c62df9dc4545580770f6927094ed513);
             
         
 
-        marker_f82e23e361c3885f1b0b2309eb4b46a6.bindPopup(popup_f5c80deb1414d89ec71d998af1fdfe4a)
+        marker_75846ef452debc1a1b710a1ca55fd590.bindPopup(popup_a8774ee89219bbd31862f901b50ecf8f)
         ;
 
         
     
     
-            marker_f82e23e361c3885f1b0b2309eb4b46a6.bindTooltip(
+            marker_75846ef452debc1a1b710a1ca55fd590.bindTooltip(
                 `<div>
                      Ministarstvo nauke 
                  </div>`,
@@ -521,17 +522,17 @@
             );
         
     
-                marker_f82e23e361c3885f1b0b2309eb4b46a6.setIcon(beautify_icon_a4448beed40dc989abf7e775ee4562c6);
+                marker_75846ef452debc1a1b710a1ca55fd590.setIcon(beautify_icon_250f7e08a2b55adfa94c36c44e010cee);
             
     
-            var marker_2cecfcd5a97c0a5dd2d41fd299bd67d8 = L.marker(
+            var marker_5a6d3d366efe71cf3b3d6c8097d5f4cc = L.marker(
                 [44.7799809, 20.5014736],
                 {
 }
-            ).addTo(map_55be2a98f85924b581543bb6e8809209);
+            ).addTo(map_cbf13fc54e25f24e9bb5e84eb865a677);
         
     
-            var beautify_icon_43d5c4423b48e12ced5ef26a94807e82 = new L.BeautifyIcon.icon(
+            var beautify_icon_a4ff69fb98207708945afc8959a13428 = new L.BeautifyIcon.icon(
                 {
   "icon": "circle",
   "iconShape": "marker",
@@ -544,27 +545,27 @@
   "isAlphaNumericIcon": false,
 }
             )
-            marker_2cecfcd5a97c0a5dd2d41fd299bd67d8.setIcon(beautify_icon_43d5c4423b48e12ced5ef26a94807e82);
+            marker_5a6d3d366efe71cf3b3d6c8097d5f4cc.setIcon(beautify_icon_a4ff69fb98207708945afc8959a13428);
         
     
-        var popup_a0c131c0eacbd1ab5ec44c1fb5ee006a = L.popup({
+        var popup_3322b19dc9ac34e346fabaa2ca888d92 = L.popup({
   "maxWidth": 350,
 });
 
         
             
-                var html_019cfdfa0a43db897575162ccd9fab24 = $(`<div id="html_019cfdfa0a43db897575162ccd9fab24" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Geološki zavod</h4>          <b>Broj objekta:</b>         9         <br>          <b>Adresa:</b>         Rovinjska 12          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 2             <br>                      <br>         <a href="Specifikacije/Geolo%C5%A1ki%20zavod.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
-                popup_a0c131c0eacbd1ab5ec44c1fb5ee006a.setContent(html_019cfdfa0a43db897575162ccd9fab24);
+                var html_60c340a594d13aed0147c0fd729944cc = $(`<div id="html_60c340a594d13aed0147c0fd729944cc" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Geološki zavod</h4>          <b>Broj objekta:</b>         9         <br>          <b>Adresa:</b>         Rovinjska 12          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 2             <br>                      <br>         <a href="Specifikacije/Geolo%C5%A1ki%20zavod.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_3322b19dc9ac34e346fabaa2ca888d92.setContent(html_60c340a594d13aed0147c0fd729944cc);
             
         
 
-        marker_2cecfcd5a97c0a5dd2d41fd299bd67d8.bindPopup(popup_a0c131c0eacbd1ab5ec44c1fb5ee006a)
+        marker_5a6d3d366efe71cf3b3d6c8097d5f4cc.bindPopup(popup_3322b19dc9ac34e346fabaa2ca888d92)
         ;
 
         
     
     
-            marker_2cecfcd5a97c0a5dd2d41fd299bd67d8.bindTooltip(
+            marker_5a6d3d366efe71cf3b3d6c8097d5f4cc.bindTooltip(
                 `<div>
                      Geološki zavod
                  </div>`,
@@ -574,17 +575,17 @@
             );
         
     
-                marker_2cecfcd5a97c0a5dd2d41fd299bd67d8.setIcon(beautify_icon_43d5c4423b48e12ced5ef26a94807e82);
+                marker_5a6d3d366efe71cf3b3d6c8097d5f4cc.setIcon(beautify_icon_a4ff69fb98207708945afc8959a13428);
             
     
-            var marker_faa97cd1f56637ac45e1cc1b0530fddc = L.marker(
+            var marker_6729ed82fee1a6e896c979f726413862 = L.marker(
                 [44.7993845, 20.4922127],
                 {
 }
-            ).addTo(map_55be2a98f85924b581543bb6e8809209);
+            ).addTo(map_cbf13fc54e25f24e9bb5e84eb865a677);
         
     
-            var beautify_icon_ade60e84e1e5e6ebfc9c4e8d90bc065d = new L.BeautifyIcon.icon(
+            var beautify_icon_043e934c4795958d868f98289d91814f = new L.BeautifyIcon.icon(
                 {
   "icon": "circle",
   "iconShape": "marker",
@@ -597,27 +598,27 @@
   "isAlphaNumericIcon": false,
 }
             )
-            marker_faa97cd1f56637ac45e1cc1b0530fddc.setIcon(beautify_icon_ade60e84e1e5e6ebfc9c4e8d90bc065d);
+            marker_6729ed82fee1a6e896c979f726413862.setIcon(beautify_icon_043e934c4795958d868f98289d91814f);
         
     
-        var popup_bdb1c280371a7781b5895acbbe2f055c = L.popup({
+        var popup_90aa33cf4e31de2be8a74bf5dddcac65 = L.popup({
   "maxWidth": 350,
 });
 
         
             
-                var html_d37dc2c527e9465fed18a9274c00348f = $(`<div id="html_d37dc2c527e9465fed18a9274c00348f" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Republčki zavod za statistiku</h4>          <b>Broj objekta:</b>         10         <br>          <b>Adresa:</b>         Milana Rakića 5          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Zavod%20za%20statistiku.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
-                popup_bdb1c280371a7781b5895acbbe2f055c.setContent(html_d37dc2c527e9465fed18a9274c00348f);
+                var html_09b3eb806311d5c7ee2ee986624b619a = $(`<div id="html_09b3eb806311d5c7ee2ee986624b619a" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Republčki zavod za statistiku</h4>          <b>Broj objekta:</b>         10         <br>          <b>Adresa:</b>         Milana Rakića 5          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Zavod%20za%20statistiku.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_90aa33cf4e31de2be8a74bf5dddcac65.setContent(html_09b3eb806311d5c7ee2ee986624b619a);
             
         
 
-        marker_faa97cd1f56637ac45e1cc1b0530fddc.bindPopup(popup_bdb1c280371a7781b5895acbbe2f055c)
+        marker_6729ed82fee1a6e896c979f726413862.bindPopup(popup_90aa33cf4e31de2be8a74bf5dddcac65)
         ;
 
         
     
     
-            marker_faa97cd1f56637ac45e1cc1b0530fddc.bindTooltip(
+            marker_6729ed82fee1a6e896c979f726413862.bindTooltip(
                 `<div>
                      Republčki zavod za statistiku
                  </div>`,
@@ -627,17 +628,17 @@
             );
         
     
-                marker_faa97cd1f56637ac45e1cc1b0530fddc.setIcon(beautify_icon_ade60e84e1e5e6ebfc9c4e8d90bc065d);
+                marker_6729ed82fee1a6e896c979f726413862.setIcon(beautify_icon_043e934c4795958d868f98289d91814f);
             
     
-            var marker_edf9d851ddc1370ef99d8f0144a7a56e = L.marker(
+            var marker_7fec7f2a225251dae5f59de6baea7eec = L.marker(
                 [44.7716295, 20.4245241],
                 {
 }
-            ).addTo(map_55be2a98f85924b581543bb6e8809209);
+            ).addTo(map_cbf13fc54e25f24e9bb5e84eb865a677);
         
     
-            var beautify_icon_34d20d37a86f2a77b60b357a684b5c6c = new L.BeautifyIcon.icon(
+            var beautify_icon_4a60d94baf5288f9fab0e50b8001a146 = new L.BeautifyIcon.icon(
                 {
   "icon": "circle",
   "iconShape": "marker",
@@ -650,27 +651,27 @@
   "isAlphaNumericIcon": false,
 }
             )
-            marker_edf9d851ddc1370ef99d8f0144a7a56e.setIcon(beautify_icon_34d20d37a86f2a77b60b357a684b5c6c);
+            marker_7fec7f2a225251dae5f59de6baea7eec.setIcon(beautify_icon_4a60d94baf5288f9fab0e50b8001a146);
         
     
-        var popup_c61ac31673b00c5ec87915fe68a619f5 = L.popup({
+        var popup_e0c864f646b416711353d55b4dfa5cb0 = L.popup({
   "maxWidth": 350,
 });
 
         
             
-                var html_f662fefddb8ff05f49343c5f89c157a3 = $(`<div id="html_f662fefddb8ff05f49343c5f89c157a3" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Republčki hidrometeorološki zavod</h4>          <b>Broj objekta:</b>         11         <br>          <b>Adresa:</b>         Kneza Višeslava 66          <br><br>                   <b>Kalorimetar:</b> 0             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 2             <br>                      <br>         <a href="Specifikacije/Hidrometeor.%20zavod.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
-                popup_c61ac31673b00c5ec87915fe68a619f5.setContent(html_f662fefddb8ff05f49343c5f89c157a3);
+                var html_ebecca4cd8fa118fa902190e7fd9a510 = $(`<div id="html_ebecca4cd8fa118fa902190e7fd9a510" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Republčki hidrometeorološki zavod</h4>          <b>Broj objekta:</b>         11         <br>          <b>Adresa:</b>         Kneza Višeslava 66          <br><br>                   <b>Kalorimetar:</b> 0             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 2             <br>                      <br>         <a href="Specifikacije/Hidrometeor.%20zavod.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_e0c864f646b416711353d55b4dfa5cb0.setContent(html_ebecca4cd8fa118fa902190e7fd9a510);
             
         
 
-        marker_edf9d851ddc1370ef99d8f0144a7a56e.bindPopup(popup_c61ac31673b00c5ec87915fe68a619f5)
+        marker_7fec7f2a225251dae5f59de6baea7eec.bindPopup(popup_e0c864f646b416711353d55b4dfa5cb0)
         ;
 
         
     
     
-            marker_edf9d851ddc1370ef99d8f0144a7a56e.bindTooltip(
+            marker_7fec7f2a225251dae5f59de6baea7eec.bindTooltip(
                 `<div>
                      Republčki hidrometeorološki zavod
                  </div>`,
@@ -680,17 +681,17 @@
             );
         
     
-                marker_edf9d851ddc1370ef99d8f0144a7a56e.setIcon(beautify_icon_34d20d37a86f2a77b60b357a684b5c6c);
+                marker_7fec7f2a225251dae5f59de6baea7eec.setIcon(beautify_icon_4a60d94baf5288f9fab0e50b8001a146);
             
     
-            var marker_0159d5cb663eadacdb1418be3e46dbfa = L.marker(
+            var marker_de287b7ec93566bbd11a43a2415788b4 = L.marker(
                 [44.7733967, 20.4106731],
                 {
 }
-            ).addTo(map_55be2a98f85924b581543bb6e8809209);
+            ).addTo(map_cbf13fc54e25f24e9bb5e84eb865a677);
         
     
-            var beautify_icon_ab64d0e75d7cc7abf7e4e1b0eda104c8 = new L.BeautifyIcon.icon(
+            var beautify_icon_56c25aa2f557d60595ea17c1f221e0d3 = new L.BeautifyIcon.icon(
                 {
   "icon": "circle",
   "iconShape": "marker",
@@ -703,27 +704,27 @@
   "isAlphaNumericIcon": false,
 }
             )
-            marker_0159d5cb663eadacdb1418be3e46dbfa.setIcon(beautify_icon_ab64d0e75d7cc7abf7e4e1b0eda104c8);
+            marker_de287b7ec93566bbd11a43a2415788b4.setIcon(beautify_icon_56c25aa2f557d60595ea17c1f221e0d3);
         
     
-        var popup_074eed032dbaf131c5fc0294ace5026f = L.popup({
+        var popup_eb9272466f13b5ea0e15c0299f1f15a3 = L.popup({
   "maxWidth": 350,
 });
 
         
             
-                var html_96106019c1e113e82c38d0f69147e0b6 = $(`<div id="html_96106019c1e113e82c38d0f69147e0b6" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Institut za standardizaciju </h4>          <b>Broj objekta:</b>         12         <br>          <b>Adresa:</b>         Stevana Brakusa 2          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 3             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Institut%20za%20standardizaciju.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
-                popup_074eed032dbaf131c5fc0294ace5026f.setContent(html_96106019c1e113e82c38d0f69147e0b6);
+                var html_409063c0fe95b0d6ef9d648a424e94bf = $(`<div id="html_409063c0fe95b0d6ef9d648a424e94bf" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Institut za standardizaciju </h4>          <b>Broj objekta:</b>         12         <br>          <b>Adresa:</b>         Stevana Brakusa 2          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 3             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Institut%20za%20standardizaciju.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_eb9272466f13b5ea0e15c0299f1f15a3.setContent(html_409063c0fe95b0d6ef9d648a424e94bf);
             
         
 
-        marker_0159d5cb663eadacdb1418be3e46dbfa.bindPopup(popup_074eed032dbaf131c5fc0294ace5026f)
+        marker_de287b7ec93566bbd11a43a2415788b4.bindPopup(popup_eb9272466f13b5ea0e15c0299f1f15a3)
         ;
 
         
     
     
-            marker_0159d5cb663eadacdb1418be3e46dbfa.bindTooltip(
+            marker_de287b7ec93566bbd11a43a2415788b4.bindTooltip(
                 `<div>
                      Institut za standardizaciju 
                  </div>`,
@@ -733,17 +734,17 @@
             );
         
     
-                marker_0159d5cb663eadacdb1418be3e46dbfa.setIcon(beautify_icon_ab64d0e75d7cc7abf7e4e1b0eda104c8);
+                marker_de287b7ec93566bbd11a43a2415788b4.setIcon(beautify_icon_56c25aa2f557d60595ea17c1f221e0d3);
             
     
-            var marker_3801a9c76c7276276ebc1134df78c20e = L.marker(
+            var marker_71ed8af9274956407714b62bf183680e = L.marker(
                 [44.809542, 20.462414],
                 {
 }
-            ).addTo(map_55be2a98f85924b581543bb6e8809209);
+            ).addTo(map_cbf13fc54e25f24e9bb5e84eb865a677);
         
     
-            var beautify_icon_b243a47d7728583dbc6418754c234c27 = new L.BeautifyIcon.icon(
+            var beautify_icon_40777b1f8a0a23a55208770e409b0965 = new L.BeautifyIcon.icon(
                 {
   "icon": "circle",
   "iconShape": "marker",
@@ -756,27 +757,27 @@
   "isAlphaNumericIcon": false,
 }
             )
-            marker_3801a9c76c7276276ebc1134df78c20e.setIcon(beautify_icon_b243a47d7728583dbc6418754c234c27);
+            marker_71ed8af9274956407714b62bf183680e.setIcon(beautify_icon_40777b1f8a0a23a55208770e409b0965);
         
     
-        var popup_0701c31adb1a2e26585fbb6823c920ed = L.popup({
+        var popup_d95bd1967aafbe1720f95cf110b08ee5 = L.popup({
   "maxWidth": 350,
 });
 
         
             
-                var html_e0b0cb9e50238c2cadd0d48022b9117e = $(`<div id="html_e0b0cb9e50238c2cadd0d48022b9117e" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Zgrada RIK</h4>          <b>Broj objekta:</b>         13         <br>          <b>Adresa:</b>         Kralja Milana 14         <br><br>                   <b>Kalorimetar:</b> 2             <br>                          <b>El. brojilo:</b> 2             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/RIK.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
-                popup_0701c31adb1a2e26585fbb6823c920ed.setContent(html_e0b0cb9e50238c2cadd0d48022b9117e);
+                var html_9eb65ea60a3fc63edf193fffee0f44b1 = $(`<div id="html_9eb65ea60a3fc63edf193fffee0f44b1" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Zgrada RIK</h4>          <b>Broj objekta:</b>         13         <br>          <b>Adresa:</b>         Kralja Milana 14         <br><br>                   <b>Kalorimetar:</b> 2             <br>                          <b>El. brojilo:</b> 2             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/RIK.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_d95bd1967aafbe1720f95cf110b08ee5.setContent(html_9eb65ea60a3fc63edf193fffee0f44b1);
             
         
 
-        marker_3801a9c76c7276276ebc1134df78c20e.bindPopup(popup_0701c31adb1a2e26585fbb6823c920ed)
+        marker_71ed8af9274956407714b62bf183680e.bindPopup(popup_d95bd1967aafbe1720f95cf110b08ee5)
         ;
 
         
     
     
-            marker_3801a9c76c7276276ebc1134df78c20e.bindTooltip(
+            marker_71ed8af9274956407714b62bf183680e.bindTooltip(
                 `<div>
                      Zgrada RIK
                  </div>`,
@@ -786,17 +787,17 @@
             );
         
     
-                marker_3801a9c76c7276276ebc1134df78c20e.setIcon(beautify_icon_b243a47d7728583dbc6418754c234c27);
+                marker_71ed8af9274956407714b62bf183680e.setIcon(beautify_icon_40777b1f8a0a23a55208770e409b0965);
             
     
-            var marker_cc1b3b0cb4ea03c96d9ee7865b1dcc20 = L.marker(
+            var marker_24787cb0fbbc3f493cea7445eada37bf = L.marker(
                 [44.8170058, 20.4610046],
                 {
 }
-            ).addTo(map_55be2a98f85924b581543bb6e8809209);
+            ).addTo(map_cbf13fc54e25f24e9bb5e84eb865a677);
         
     
-            var beautify_icon_3e251242d27f60751bb90aeb96bb6262 = new L.BeautifyIcon.icon(
+            var beautify_icon_224c304607232207fd3751e8216ad1ac = new L.BeautifyIcon.icon(
                 {
   "icon": "circle",
   "iconShape": "marker",
@@ -809,27 +810,27 @@
   "isAlphaNumericIcon": false,
 }
             )
-            marker_cc1b3b0cb4ea03c96d9ee7865b1dcc20.setIcon(beautify_icon_3e251242d27f60751bb90aeb96bb6262);
+            marker_24787cb0fbbc3f493cea7445eada37bf.setIcon(beautify_icon_224c304607232207fd3751e8216ad1ac);
         
     
-        var popup_95e1d2d54980c56ca76a32a1ae9f597c = L.popup({
+        var popup_2b06237048e4f449ff512dd935842d2c = L.popup({
   "maxWidth": 350,
 });
 
         
             
-                var html_8a2a9d458066acc6ac8392128b95fdfd = $(`<div id="html_8a2a9d458066acc6ac8392128b95fdfd" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Narodno pozorište</h4>          <b>Broj objekta:</b>         14         <br>          <b>Adresa:</b>         Francuska 3          <br><br>                   <b>Kalorimetar:</b> 3             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Narodno%20pozori%C5%A1te.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
-                popup_95e1d2d54980c56ca76a32a1ae9f597c.setContent(html_8a2a9d458066acc6ac8392128b95fdfd);
+                var html_02b1f00ee0ee6171789c52010381d203 = $(`<div id="html_02b1f00ee0ee6171789c52010381d203" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Narodno pozorište</h4>          <b>Broj objekta:</b>         14         <br>          <b>Adresa:</b>         Francuska 3          <br><br>                   <b>Kalorimetar:</b> 3             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Narodno%20pozori%C5%A1te.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_2b06237048e4f449ff512dd935842d2c.setContent(html_02b1f00ee0ee6171789c52010381d203);
             
         
 
-        marker_cc1b3b0cb4ea03c96d9ee7865b1dcc20.bindPopup(popup_95e1d2d54980c56ca76a32a1ae9f597c)
+        marker_24787cb0fbbc3f493cea7445eada37bf.bindPopup(popup_2b06237048e4f449ff512dd935842d2c)
         ;
 
         
     
     
-            marker_cc1b3b0cb4ea03c96d9ee7865b1dcc20.bindTooltip(
+            marker_24787cb0fbbc3f493cea7445eada37bf.bindTooltip(
                 `<div>
                      Narodno pozorište
                  </div>`,
@@ -839,17 +840,17 @@
             );
         
     
-                marker_cc1b3b0cb4ea03c96d9ee7865b1dcc20.setIcon(beautify_icon_3e251242d27f60751bb90aeb96bb6262);
+                marker_24787cb0fbbc3f493cea7445eada37bf.setIcon(beautify_icon_224c304607232207fd3751e8216ad1ac);
             
     
-            var marker_01e7c8cc8656459db99e7953b111381b = L.marker(
+            var marker_511c23e9ae079ef8a54e27c7bddcc5c6 = L.marker(
                 [44.8178515, 20.4625252],
                 {
 }
-            ).addTo(map_55be2a98f85924b581543bb6e8809209);
+            ).addTo(map_cbf13fc54e25f24e9bb5e84eb865a677);
         
     
-            var beautify_icon_590e9ecf036ffd2d1f984b6e6d40caf6 = new L.BeautifyIcon.icon(
+            var beautify_icon_0fa374e4ee25536eb134e15675f531ed = new L.BeautifyIcon.icon(
                 {
   "icon": "circle",
   "iconShape": "marker",
@@ -862,27 +863,27 @@
   "isAlphaNumericIcon": false,
 }
             )
-            marker_01e7c8cc8656459db99e7953b111381b.setIcon(beautify_icon_590e9ecf036ffd2d1f984b6e6d40caf6);
+            marker_511c23e9ae079ef8a54e27c7bddcc5c6.setIcon(beautify_icon_0fa374e4ee25536eb134e15675f531ed);
         
     
-        var popup_0877460cb9e2d98a57bb498e0719c557 = L.popup({
+        var popup_809fd6ab82fea183a1bd737bd1efcd2e = L.popup({
   "maxWidth": 350,
 });
 
         
             
-                var html_c4a60488b74ddc88378f4d69a3063c69 = $(`<div id="html_c4a60488b74ddc88378f4d69a3063c69" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Direkcija za vodne puteve “Plovput” </h4>          <b>Broj objekta:</b>         15         <br>          <b>Adresa:</b>         Francuska 9          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 2             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Plovput.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
-                popup_0877460cb9e2d98a57bb498e0719c557.setContent(html_c4a60488b74ddc88378f4d69a3063c69);
+                var html_05f744565f2ae497415f053dc83a918e = $(`<div id="html_05f744565f2ae497415f053dc83a918e" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Direkcija za vodne puteve “Plovput” </h4>          <b>Broj objekta:</b>         15         <br>          <b>Adresa:</b>         Francuska 9          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 2             <br>                          <b>Vodomer:</b> 1             <br>                      <br>         <a href="Specifikacije/Plovput.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_809fd6ab82fea183a1bd737bd1efcd2e.setContent(html_05f744565f2ae497415f053dc83a918e);
             
         
 
-        marker_01e7c8cc8656459db99e7953b111381b.bindPopup(popup_0877460cb9e2d98a57bb498e0719c557)
+        marker_511c23e9ae079ef8a54e27c7bddcc5c6.bindPopup(popup_809fd6ab82fea183a1bd737bd1efcd2e)
         ;
 
         
     
     
-            marker_01e7c8cc8656459db99e7953b111381b.bindTooltip(
+            marker_511c23e9ae079ef8a54e27c7bddcc5c6.bindTooltip(
                 `<div>
                      Direkcija za vodne puteve “Plovput” 
                  </div>`,
@@ -892,17 +893,17 @@
             );
         
     
-                marker_01e7c8cc8656459db99e7953b111381b.setIcon(beautify_icon_590e9ecf036ffd2d1f984b6e6d40caf6);
+                marker_511c23e9ae079ef8a54e27c7bddcc5c6.setIcon(beautify_icon_0fa374e4ee25536eb134e15675f531ed);
             
     
-            var marker_a5be0c2524715f991042623cb20f03c6 = L.marker(
+            var marker_85a8c7960d0afb4b9c30955073d3dd37 = L.marker(
                 [44.7658699, 20.4829438],
                 {
 }
-            ).addTo(map_55be2a98f85924b581543bb6e8809209);
+            ).addTo(map_cbf13fc54e25f24e9bb5e84eb865a677);
         
     
-            var beautify_icon_1cf6607d0663364dd7e19c73fe922b44 = new L.BeautifyIcon.icon(
+            var beautify_icon_337ba8b9746ff34a4a3f990cd9249ace = new L.BeautifyIcon.icon(
                 {
   "icon": "circle",
   "iconShape": "marker",
@@ -915,27 +916,27 @@
   "isAlphaNumericIcon": false,
 }
             )
-            marker_a5be0c2524715f991042623cb20f03c6.setIcon(beautify_icon_1cf6607d0663364dd7e19c73fe922b44);
+            marker_85a8c7960d0afb4b9c30955073d3dd37.setIcon(beautify_icon_337ba8b9746ff34a4a3f990cd9249ace);
         
     
-        var popup_9a6649f74c0c31640d38ef4778447125 = L.popup({
+        var popup_dc177793520d56176d02db4586b375d9 = L.popup({
   "maxWidth": 350,
 });
 
         
             
-                var html_0ae1e8a8e5fe719c9b75dff1a8e83a83 = $(`<div id="html_0ae1e8a8e5fe719c9b75dff1a8e83a83" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Saobraćajni fakultet</h4>          <b>Broj objekta:</b>         16         <br>          <b>Adresa:</b>         Vojvode Stepe 305          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 2             <br>                      <br>         <a href="Specifikacije/Saobra%C4%87ajni%20fakultet.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
-                popup_9a6649f74c0c31640d38ef4778447125.setContent(html_0ae1e8a8e5fe719c9b75dff1a8e83a83);
+                var html_1b9367d9dde779af1e647fb1d325b3a6 = $(`<div id="html_1b9367d9dde779af1e647fb1d325b3a6" style="width: 100.0%; height: 100.0%;">     <div style="width:300px">          <h4>Saobraćajni fakultet</h4>          <b>Broj objekta:</b>         16         <br>          <b>Adresa:</b>         Vojvode Stepe 305          <br><br>                   <b>Kalorimetar:</b> 1             <br>                          <b>El. brojilo:</b> 1             <br>                          <b>Vodomer:</b> 2             <br>                      <br>         <a href="Specifikacije/Saobra%C4%87ajni%20fakultet.pdf" target="_blank" rel="noopener noreferrer">             Specifikacija         </a>              </div>     </div>`)[0];
+                popup_dc177793520d56176d02db4586b375d9.setContent(html_1b9367d9dde779af1e647fb1d325b3a6);
             
         
 
-        marker_a5be0c2524715f991042623cb20f03c6.bindPopup(popup_9a6649f74c0c31640d38ef4778447125)
+        marker_85a8c7960d0afb4b9c30955073d3dd37.bindPopup(popup_dc177793520d56176d02db4586b375d9)
         ;
 
         
     
     
-            marker_a5be0c2524715f991042623cb20f03c6.bindTooltip(
+            marker_85a8c7960d0afb4b9c30955073d3dd37.bindTooltip(
                 `<div>
                      Saobraćajni fakultet
                  </div>`,
@@ -945,13 +946,7 @@
             );
         
     
-                marker_a5be0c2524715f991042623cb20f03c6.setIcon(beautify_icon_1cf6607d0663364dd7e19c73fe922b44);
+                marker_85a8c7960d0afb4b9c30955073d3dd37.setIcon(beautify_icon_337ba8b9746ff34a4a3f990cd9249ace);
             
-    
-            map_55be2a98f85924b581543bb6e8809209.fitBounds(
-                [[44.7658699, 20.4040059], [44.820994, 20.5014736]],
-                {}
-            );
-        
 </script>
 </html>

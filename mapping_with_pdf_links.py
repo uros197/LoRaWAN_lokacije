@@ -11,7 +11,7 @@ from urllib.parse import quote
 
 EXCEL_FILE = "Lokacije.xlsx"
 SHEET_NAME = "Spisak lokacija"
-OUTPUT_FILE = "docs/index.html"
+OUTPUT_FILE = "index.html"
 
 # Folder containing the 15 PDF specifications.
 # Keep this folder next to mapa_lokacija.html.
@@ -127,8 +127,9 @@ center_lon = valid_coordinates[LONGITUDE_COLUMN].mean()
 # )
 
 mapa = folium.Map(
-    location=[center_lat, center_lon],
-    zoom_start=11,
+    location=[center_lat -0.005 , center_lon],
+    zoom_start=13.9,
+    zoom_snap=0.1,
     tiles=None
 )
 
@@ -236,24 +237,6 @@ for _, row in valid_coordinates.iterrows():
         ),
         tooltip=building_name
     ).add_to(mapa)
-
-
-# ---------------------------------------------------------
-# Automatically fit map to all buildings
-# ---------------------------------------------------------
-
-bounds = [
-    [
-        valid_coordinates[LATITUDE_COLUMN].min(),
-        valid_coordinates[LONGITUDE_COLUMN].min()
-    ],
-    [
-        valid_coordinates[LATITUDE_COLUMN].max(),
-        valid_coordinates[LONGITUDE_COLUMN].max()
-    ]
-]
-
-mapa.fit_bounds(bounds)
 
 
 # ---------------------------------------------------------
