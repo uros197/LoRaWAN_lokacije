@@ -128,7 +128,7 @@ center_lon = valid_coordinates[LONGITUDE_COLUMN].mean()
 
 mapa = folium.Map(
     location=[center_lat, center_lon],
-    zoom_start=11.9,
+    zoom_start=12,
     zoom_snap=0.1,
     tiles=None
 )
