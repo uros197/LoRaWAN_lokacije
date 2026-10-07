@@ -1,2 +1,6 @@
 # Excel input files
 *.xlsx
+
+# Python stare skripte
+mapping.py
+reading.py
