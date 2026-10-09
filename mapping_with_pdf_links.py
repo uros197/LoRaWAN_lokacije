@@ -40,7 +40,9 @@ MEASUREMENT_COLUMNS = [
 gotovo = ["Geološki zavod", 
           "Republčki zavod za statistiku", 
           "Institut za standardizaciju ",
-          "Zgrada RIK"
+          "Zgrada RIK",
+          "Narodno pozorište",
+          "Plovput"
           ]
 
 
